@@ -9,11 +9,12 @@
 }
 
 .main-text{
-    width:90%;
-    margin:auto;
     font-size:1rem;
 }
 
+.text-center{
+    text-align:center;
+}
 
 //Layout
 .my-3{
@@ -44,7 +45,10 @@
 
 .flex-box{
     display:flex;
-  justify-content: space-between;
+    justify-content: space-between;
+    &.align-center{
+        align-items: center;
+    }
 }
 
 //Buttons
