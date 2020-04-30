@@ -1,0 +1,43 @@
+@mixin mobile {
+    body{
+        text-align:center;
+    }
+    .container{
+        min-width:375px;
+    }
+    
+    .wrapper{
+        padding: 0 4%;
+    }
+    .flex-box{
+        display:block;
+    }
+
+}
+@mixin desktop {
+    .container{
+        max-width:1440px;
+    }
+    .wrapper {
+        padding: 0 12%;
+    }
+    .show-sm{
+        display:none;
+    }
+}
+
+@mixin tablet {
+    .wrapper {
+        padding: 0 8%;
+    }
+}
+
+@media (max-width: 766px){
+    @include mobile;
+}
+@media (min-width: 767px) and (max-width:1023px){
+    @include tablet;
+}
+@media (min-width:1023px){
+    @include desktop;
+}

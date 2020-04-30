@@ -1,0 +1,78 @@
+.heading-text{
+    font-size: 2rem;
+    color: $heading-text;
+    font-weight:600;
+}
+.lead{
+    font-size:18px;
+    color: $heading-text;
+}
+
+.main-text{
+    width:90%;
+    margin:auto;
+    font-size:1rem;
+}
+
+
+//Layout
+.my-3{
+    margin-top:3rem;
+    margin-bottom:3rem;
+}
+.my-2{
+    margin-top:2rem;
+    margin-bottom:2rem;
+}
+.my-1{
+    margin-top:1rem;
+    margin-bottom:1rem;
+}
+.py-5{
+    padding: 5rem 0;
+}
+.py-3{
+    padding: 3rem 0;
+}
+.py-2{
+    padding: 2rem 0;
+}
+.py-1{
+    padding: 1rem 0;
+}
+
+
+.flex-box{
+    display:flex;
+  justify-content: space-between;
+}
+
+//Buttons
+.btn{
+    cursor: pointer;
+    padding: 16px 78px;
+    color: white;
+    border-radius:35px;
+    letter-spacing: 1px;
+
+    &.btn-cyan{
+        background: $primary-cyan;
+        box-shadow: 0 5px 5px -2px darken($primary-cyan, 10%);
+        
+
+        &:hover{
+            filter: brightness(110%);
+        }
+
+    }
+    &.btn-blue{
+        background: $primary-blue;
+        box-shadow: 0 5px 5px -2px darken($primary-blue, 10%);
+
+        &:hover{
+            filter: brightness(110%)
+        }
+
+    }
+
+}
